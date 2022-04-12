@@ -6,7 +6,7 @@
 
 body {
     display: flex;
-    align-items: end;
+    align-items: center;
     justify-content: center;
     height: 100vh;
     background: linear-gradient(121deg,rgb(0, 0, 0),#151515 61%);
@@ -14,7 +14,7 @@ body {
     padding: 0;
     padding-bottom: 0px;
     font-family: 'Ubuntu', sans-serif;
-    padding-bottom: 2.5rem;
+/*     padding-bottom: 2.5rem; */
     overflow: hidden;
 }
 
@@ -24,6 +24,7 @@ body {
     padding: 3px 3px;
     border: 1px solid #484848d1;
     transition: all .3s;
+    margin-bottom: -2rem;
 }
 
 .outPut {
