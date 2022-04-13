@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" class="sl-theme-dark">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">  
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.72/dist/themes/dark.css" /> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.72/dist/themes/light.css" /> -->
+</head>
+<body>
+    <section class="C">
+        <div class="calculator"> 
+            <div class="outPut">
+                <p data-previus></p>
+                <p data-current>0</p>
+            </div>
+            <div class="buttons">
+                <button class="btn js-k" value="+" data-operation>+</button>
+                <button class="btn js-k" value="-" data-operation>-</button>
+                <button class="btn js-k" value="*" data-operation>&times</button>
+                <button class="btn js-k" value="/" data-operation>&divide</button>
+                <button class="btn zero" data-number>0</button>
+                <button class="btn one" data-number>1</button>
+                <button class="btn two" data-number>2</button>
+                <button class="btn three" data-number>3</button>
+                <button class="btn four" data-number>4</button>
+                <button class="btn five" data-number>5</button>
+                <button class="btn six" data-number>6</button>
+                <button class="btn seven" data-number>7</button>
+                <button class="btn eight" data-number>8</button>
+                <button class="btn nine" data-number>9</button>
+                <button class="btn decimale" data-number>.</button>
+                <button class="btn delete js-k" data-delete><i class="fas fa-backspace"></i></button>
+                <button class="btn clearAll" data-clearAll>AC</button>
+                <button class="btn equals js-k" data-equals>=</button>
+            </div>
+        </div>
+        <div class="toggle">
+            <button class="historyBtn">
+                <!-- <sl-icon name="clock-history"></sl-icon> -->
+                <i class="fa fa-history" aria-hidden="true"></i>
+            </button>
+        </div>
+        <!-- <div class="overlay"> -->
+            <div class="historyContainer">
+                <div class="text">
+                    <div class="title">
+                        <h3>History</h2>
+                    </div>
+                    <div class="boxContainer">
+                        <!-- history Boxes container -->
+                    </div>
+                    <div class="trashContainer">
+                        <div class="trashbin">
+                            <span class="spann">
+                                <i class="fa fa-trash" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            <!-- </div> -->
+        </div>
+    </section>
+</body>
+<!-- <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.72/dist/shoelace.js"></script> -->
+<script src="app.js"></script>
+</html>
